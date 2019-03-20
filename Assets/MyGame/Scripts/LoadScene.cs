@@ -16,18 +16,7 @@ public class LoadScene : MonoBehaviour {
         SceneManager.LoadScene(2);
     }
 
-    public void ListAllScenes()
-    {
-        List<string> scenes = new List<string>();
-
-        foreach (var sceneEntry in EditorBuildSettings.scenes)
-        {
-            Debug.Log(sceneEntry.path);
-            Debug.Log(System.IO.Path.GetFileNameWithoutExtension(sceneEntry.path));
-            Debug.Log(System.IO.Path. GetFullPath(sceneEntry.path));
-        }
-                   
-    }
+    
 
     
 }
