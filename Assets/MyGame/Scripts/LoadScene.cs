@@ -23,6 +23,8 @@ public class LoadScene : MonoBehaviour {
         foreach (var sceneEntry in EditorBuildSettings.scenes)
         {
             Debug.Log(sceneEntry.path);
+            Debug.Log(System.IO.Path.GetFileNameWithoutExtension(sceneEntry.path));
+            Debug.Log(System.IO.Path. GetFullPath(sceneEntry.path));
         }
                    
     }
